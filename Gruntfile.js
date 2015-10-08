@@ -32,4 +32,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['uglify']);
 
   grunt.registerTask('build', ['uglify']);
+  grunt.registerTask('release', ['uglify', 'release-it']);
 };
