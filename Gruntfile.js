@@ -28,6 +28,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   //grunt.loadNpmTasks("grunt-webpack");
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('release-it');
   // Default task.
   grunt.registerTask('default', ['uglify']);
 
