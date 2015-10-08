@@ -1,7 +1,7 @@
 {
   "name": "superdeluxe-js",
   "description": "wow, such test, much dumb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git@github.com:thogra/superdeluxe-js.git"
@@ -10,8 +10,8 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-      "build": "npm install && grunt build",
-      "test": "grunt"
+    "build": "npm install && grunt build",
+    "test": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
