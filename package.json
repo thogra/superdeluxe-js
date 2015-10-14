@@ -1,7 +1,7 @@
 {
   "name": "superdeluxe-js",
   "description": "wow, such test, much dumb",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "repository": {
     "type": "git",
     "url": "git@github.com:thogra/superdeluxe-js.git"
@@ -16,6 +16,6 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-uglify": "~0.3.2",
-    "grunt-release-it": "^1.0.0"
+    "grunt-release": "^0.13.0"
   }
 }
