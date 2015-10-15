@@ -21,8 +21,10 @@ module.exports = function(grunt) {
         },
         files: [
           {
-            src: ['dist/*.js'], // What should be included in the zip
-            dest: ''
+            cwd: 'dist/',
+            src: ['*.js'],
+            expand: true
+
           },
         ]
       }
