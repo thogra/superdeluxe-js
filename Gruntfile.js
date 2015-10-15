@@ -17,12 +17,12 @@ module.exports = function(grunt) {
     compress: {
       main: {
         options: {
-          archive: 'spid-sdk-<%= pkg.version %>.zip'
+          archive: 'dist/superdeluxe-<%= pkg.version %>.zip'
         },
         files: [
           {
-            src: ['dist/**'], // What should be included in the zip
-            dest: 'dist/'
+            src: ['dist/*.js'], // What should be included in the zip
+            dest: ''
           },
         ]
       }
@@ -30,22 +30,6 @@ module.exports = function(grunt) {
     "release-it": {
       options: {
          pkgFiles: ['package.json', 'bower.json']
-      }
-    },
-    "github-release": {
-      options: {
-        repository: 'thogra/superdeluxe-js',
-        release: {
-          tag_name: grunt.file.readJSON('package.json').version,
-          name: grunt.file.readJSON('package.json').version
-        },
-        auth: {
-          username: process.env.GITHUB_ACCESS_TOKEN,
-          password: ''
-        }
-      },
-      files: {
-        src: ['dist/spid-sdk-<%= pkg.version %>.zip']
       }
     }
   });
