@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       main: {
         src: 'src/superdeluxe.js',
-        dest: 'dist/superdeluxe.min.js'
+        dest: 'dist/superdeluxe-<%= pkg.version %>.min.js'
       }
     },
     compress: {
@@ -29,7 +29,8 @@ module.exports = function(grunt) {
     },
     "release-it": {
       options: {
-         pkgFiles: ['package.json', 'bower.json']
+         pkgFiles: ['package.json', 'bower.json'],
+         increment: '<%= pkg.version %>'
       }
     }
   });
